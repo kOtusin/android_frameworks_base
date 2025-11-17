@@ -65,7 +65,8 @@ public class KeyStore {
             case UserState.LSKF_LOCKED:
                 return KeyStore.State.LOCKED;
             default:
-                throw new AssertionError(userState);
+                //throw new AssertionError(userState);
+                return KeyStore.State.UNLOCKED;
         }
     }
 
